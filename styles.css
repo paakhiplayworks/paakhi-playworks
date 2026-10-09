@@ -26,10 +26,10 @@ h1{font-size:clamp(46px,6vw,72px);line-height:.98;letter-spacing:-3px;margin:0 0
 .hero-proof{margin-top:22px;font-size:13px;font-weight:800;color:#4c6193}.hero-proof span{margin-right:5px}
 .hero-art {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   right: 0;
   top: 0;
-  width: 61%;
+  width: 100%;
   height: 100%;
   background-image: url("assets/hero-world.jpg");
   background-size: contain;
@@ -37,6 +37,20 @@ h1{font-size:clamp(46px,6vw,72px);line-height:.98;letter-spacing:-3px;margin:0 0
   background-position: right center;
   clip-path: none;
   opacity: 1;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(234, 244, 255, 0.98) 0%,
+    rgba(234, 244, 255, 0.88) 32%,
+    rgba(234, 244, 255, 0.25) 56%,
+    transparent 72%
+  );
 }
 .floating-chip{position:absolute;z-index:2;background:#ffffffd9;backdrop-filter:blur(8px);border:1px solid #fff;border-radius:16px;padding:11px 15px;box-shadow:0 8px 22px #2a4a8c18;font-size:12px;font-weight:900;animation:bob 4s ease-in-out infinite}
 .chip-one{right:8%;top:20%}.chip-two{right:13%;bottom:15%;animation-delay:-2s}
