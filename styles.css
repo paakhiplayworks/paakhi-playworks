@@ -24,7 +24,20 @@ h1{font-size:clamp(46px,6vw,72px);line-height:.98;letter-spacing:-3px;margin:0 0
 .hero-copy>p{font-size:17px;line-height:1.55;font-weight:700;color:#27305e;margin:0 0 24px}
 .hero-button{padding:16px 25px;font-size:16px}.button-arrow{margin-left:8px;font-size:18px}
 .hero-proof{margin-top:22px;font-size:13px;font-weight:800;color:#4c6193}.hero-proof span{margin-right:5px}
-.hero-art{position:absolute;z-index:-1;right:-1%;top:0;width:61%;height:100%;background-image:linear-gradient(90deg,#d9eaff00,#d9eaff00),url("assets/hero-world.jpg");background-size:cover;background-position:52% 44%;clip-path:ellipse(73% 78% at 64% 48%);opacity:.97}
+.hero-art {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  width: 61%;
+  height: 100%;
+  background-image: url("assets/hero-world.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  clip-path: none;
+  opacity: 1;
+}
 .floating-chip{position:absolute;z-index:2;background:#ffffffd9;backdrop-filter:blur(8px);border:1px solid #fff;border-radius:16px;padding:11px 15px;box-shadow:0 8px 22px #2a4a8c18;font-size:12px;font-weight:900;animation:bob 4s ease-in-out infinite}
 .chip-one{right:8%;top:20%}.chip-two{right:13%;bottom:15%;animation-delay:-2s}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(1deg)}}
