@@ -4,23 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f6ff">
-  <meta name="description" content="Small games. Big brain joy. Discover playful puzzle games from Paakhi Playworks.">
-  <title>Paakhi Playworks — Small Games. Big Brain Joy.</title>
+  <title>Paakhi Playworks - Puzzle &amp; Brain Games for Android</title>
+  <meta name="description" content="Paakhi Playworks is an indie game studio making puzzle and brain teaser games for Android, including Next Up: Number Series Puzzle. Free to play.">
+  <link rel="canonical" href="https://www.paakhiplayworks.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Paakhi Playworks">
+  <meta property="og:title" content="Paakhi Playworks - Puzzle &amp; Brain Games for Android">
+  <meta property="og:description" content="An indie game studio making puzzle and brain teaser games for Android, including Next Up: Number Series Puzzle.">
+  <meta property="og:url" content="https://www.paakhiplayworks.com/">
+  <meta property="og:image" content="https://www.paakhiplayworks.com/assets/hero-world.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Paakhi Playworks - Puzzle &amp; Brain Games for Android">
+  <meta name="twitter:description" content="An indie game studio making puzzle and brain teaser games for Android, including Next Up: Number Series Puzzle.">
+  <meta name="twitter:image" content="https://www.paakhiplayworks.com/assets/hero-world.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.paakhiplayworks.com/#organization",
+        "name": "Paakhi Playworks",
+        "url": "https://www.paakhiplayworks.com/",
+        "logo": "https://www.paakhiplayworks.com/assets/brand-mark.jpg",
+        "description": "Paakhi Playworks is an indie game studio making puzzle and brain teaser games for Android, including Next Up: Number Series Puzzle.",
+        "email": "paakhiplayworks@gmail.com",
+        "sameAs": [
+          "https://play.google.com/store/apps/developer?id=Paakhi+Playworks&hl=en_IN"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.paakhiplayworks.com/#website",
+        "url": "https://www.paakhiplayworks.com/",
+        "name": "Paakhi Playworks",
+        "description": "Puzzle and brain games for Android from an independent game studio.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://www.paakhiplayworks.com/#organization" }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Paakhi Playworks home">
-      <span class="brand-mark"><img src="assets/brand-mark.jpg" alt=""></span>
+      <span class="brand-mark"><img src="/assets/brand-mark.jpg" alt=""></span>
       <span>Paakhi<br>Playworks</span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" aria-label="Main navigation">
       <a class="active" href="#home">Home</a>
       <a href="#games">Games</a>
+      <a href="/blog/">Blog</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -35,8 +78,11 @@
         <h1>Small Games.<br><span class="rainbow">Big Brain Joy.</span></h1>
         <p>Fun, thoughtful puzzle games for curious minds.<br class="desktop-only"> Play, learn and unlock a brighter you.</p>
         <a class="play-button hero-button" href="#games"><span class="play-triangle">▶</span> Explore Our Games <span class="button-arrow">↗</span></a>
+        <div class="hero-proof"><span>🧠</span> Think a little. Smile a lot.</div>
       </div>
       <div class="hero-art" role="img" aria-label="A whimsical fantasy world with floating islands, a castle, and a magical adventure"></div>
+      <div class="floating-chip chip-one">✨ Curious minds welcome</div>
+      <div class="floating-chip chip-two">🦉 Think. Play. Grow.</div>
       <div class="cloud cloud-left"></div><div class="cloud cloud-right"></div>
     </section>
 
@@ -45,31 +91,48 @@
         <span class="section-kicker">PICK YOUR PLAY</span>
         <h2>Our Games <span class="heading-star">✦</span></h2>
         <p>Different worlds. Endless ways to play.</p>
+        <p class="studio-line">Paakhi Playworks is an indie game studio making puzzle and brain teaser games for Android, including <a href="/next-up/">Next Up: Number Series Puzzle</a>.</p>
       </div>
-      <div class="game-grid">
-        <article class="game-card card-slice">
-          <div class="game-art"><img src="assets/one-slice.jpg" alt="Colorful One Slice game artwork"><span class="card-sticker">SWIPE!</span></div>
-          <div class="game-info"><h3>One Slice</h3><p>Slice, relax, repeat.</p><button class="launch-button" data-game="One Slice" aria-label="Explore One Slice">▶</button></div>
+
+      <h3 class="shelf-title live">Play now</h3>
+      <article class="game-card featured-card is-live">
+        <div class="game-art">
+          <img src="/assets/series-game.jpg" alt="Next Up: Number Series Puzzle game artwork">
+          <span class="card-sticker">CRACK IT</span>
+          <span class="live-badge"><span class="live-dot"></span>Live</span>
+        </div>
+        <div class="featured-body">
+          <h4>Next Up: Number Series Puzzle</h4>
+          <p class="card-desc">Next Up: Number Series Puzzle is a free Android game by Paakhi Playworks with 100+ levels of number series and pattern puzzles. Spot the hidden rule and find what comes next.</p>
+          <ul class="featured-facts"><li>100+ levels</li><li>Free</li><li>Android</li></ul>
+          <div class="cta-row">
+            <a class="play-button" href="https://play.google.com/store/apps/details?id=com.paakhiplayworks.nextup" target="_blank" rel="noopener"><span class="play-triangle">▶</span> Get on Google Play</a>
+            <a class="text-link" href="/next-up/">Learn more about Next Up →</a>
+          </div>
+        </div>
+      </article>
+
+      <h3 class="shelf-title">Coming soon</h3>
+      <div class="game-grid soon">
+        <article class="game-card soon card-seating">
+          <div class="game-art"><img src="/assets/seating-chart.jpg" alt="Seating Chart game artwork"><span class="card-sticker">THINK</span></div>
+          <div class="game-info"><h4>Seating Chart</h4><p>Arrange. Think. Solve.</p><p class="card-desc">Seating Chart is an upcoming arrangement puzzle game from Paakhi Playworks.</p><button class="launch-button" data-game="Seating Chart" aria-label="About Seating Chart">▶</button></div>
         </article>
-        <article class="game-card card-seating">
-          <div class="game-art"><img src="assets/seating-chart.jpg" alt="Seating Chart game artwork"><span class="card-sticker">THINK</span></div>
-          <div class="game-info"><h3>Seating Chart</h3><p>Arrange. Think. Solve.</p><button class="launch-button" data-game="Seating Chart" aria-label="Explore Seating Chart">▶</button></div>
+        <article class="game-card soon card-slice">
+          <div class="game-art"><img src="/assets/one-slice.jpg" alt="Colorful One Slice game artwork"><span class="card-sticker">SWIPE!</span></div>
+          <div class="game-info"><h4>One Slice</h4><p>Slice, relax, repeat.</p><p class="card-desc">One Slice is an upcoming relaxing slicing game from Paakhi Playworks.</p><button class="launch-button" data-game="One Slice" aria-label="About One Slice">▶</button></div>
         </article>
-        <article class="game-card card-grid">
-          <div class="game-art"><img src="assets/grid-game.jpg" alt="Grid Game number puzzle artwork"><span class="card-sticker">AHA!</span></div>
-          <div class="game-info"><h3>Grid Game</h3><p>Spot the pattern.</p><button class="launch-button" data-game="Grid Game" aria-label="Explore Grid Game">▶</button></div>
+        <article class="game-card soon card-grid">
+          <div class="game-art"><img src="/assets/grid-game.jpg" alt="Grid Game number puzzle artwork"><span class="card-sticker">AHA!</span></div>
+          <div class="game-info"><h4>Grid Game</h4><p>Spot the pattern.</p><p class="card-desc">Grid Game is an upcoming number pattern puzzle from Paakhi Playworks.</p><button class="launch-button" data-game="Grid Game" aria-label="About Grid Game">▶</button></div>
         </article>
-        <article class="game-card card-series">
-          <div class="game-art"><img src="assets/series-game.jpg" alt="Series Game number puzzle artwork"><span class="card-sticker">CRACK IT</span></div>
-          <div class="game-info"><h3>Series Game</h3><p>Find what comes next.</p><button class="launch-button" data-game="Series Game" aria-label="Explore Series Game">▶</button></div>
+        <article class="game-card soon card-cryptic">
+          <div class="game-art"><img src="/assets/cryptic-game.jpg" alt="Cryptic Game symbol puzzle artwork"><span class="card-sticker">MYSTERY</span></div>
+          <div class="game-info"><h4>Cryptic Game</h4><p>Decode the mystery.</p><p class="card-desc">Cryptic Game is an upcoming symbol-decoding puzzle from Paakhi Playworks.</p><button class="launch-button" data-game="Cryptic Game" aria-label="About Cryptic Game">▶</button></div>
         </article>
-        <article class="game-card card-cryptic">
-          <div class="game-art"><img src="assets/cryptic-game.jpg" alt="Cryptic Game symbol puzzle artwork"><span class="card-sticker">MYSTERY</span></div>
-          <div class="game-info"><h3>Cryptic Game</h3><p>Decode the mystery.</p><button class="launch-button" data-game="Cryptic Game" aria-label="Explore Cryptic Game">▶</button></div>
-        </article>
-        <article class="game-card card-more">
-          <div class="game-art"><img src="assets/more-games.jpg" alt="A glowing mystery door representing more games"><span class="card-sticker">COMING UP</span></div>
-          <div class="game-info"><h3>More Games</h3><p>New worlds coming soon!</p><button class="launch-button" data-game="More Games" aria-label="Explore more games">▶</button></div>
+        <article class="game-card soon card-more">
+          <div class="game-art"><img src="/assets/more-games.jpg" alt="A glowing mystery door representing more games"><span class="card-sticker">COMING UP</span></div>
+          <div class="game-info"><h4>More Games</h4><p>New worlds coming soon!</p><p class="card-desc">Paakhi Playworks is also building logic, word and casual arcade games.</p><button class="launch-button" data-game="More Games" aria-label="About more games">▶</button></div>
         </article>
       </div>
     </section>
@@ -95,7 +158,8 @@
         <span class="section-kicker">YOUR NEXT LITTLE OBSESSION</span>
         <h2>Ready for your<br>next adventure?</h2>
         <p>Download our games and start playing today.</p>
-        <a class="play-button download-button" href="#games"><span class="play-triangle">▶</span> Get on Google Play</a>
+        <a class="play-button download-button" href="https://play.google.com/store/apps/details?id=com.paakhiplayworks.nextup" target="_blank" rel="noopener"><span class="play-triangle">▶</span> Get on Google Play</a>
+        <a class="dev-link" href="https://play.google.com/store/apps/developer?id=Paakhi+Playworks&amp;hl=en_IN" target="_blank" rel="noopener">See all our games on Google Play <span aria-hidden="true">↗</span></a>
         <small>New puzzles. Fresh fun. Big brain energy.</small>
       </div>
     </section>
@@ -103,9 +167,8 @@
 
   <footer>
     <a class="footer-brand" href="#home">✦ Paakhi Playworks</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <span>paakhiplayworks@gmail.com</span>
-    <div><a href="#games">Games</a><a href="#about">About</a><a href="mailto:paakhiplayworks@gmail.com">Contact</a></div>
+    <span>Made for curious minds, everywhere.</span>
+    <div><a href="#games">Games</a><a href="/blog/">Blog</a><a href="#about">About</a><a href="mailto:paakhiplayworks@gmail.com">Contact</a></div>
   </footer>
 
   <div class="modal" id="game-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
@@ -118,6 +181,6 @@
       <button class="play-button modal-ok">Sounds good!</button>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>

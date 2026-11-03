@@ -1,0 +1,5 @@
+# Paakhi Playworks - all crawlers (including search and AI assistants) are welcome
+User-agent: *
+Allow: /
+
+Sitemap: https://www.paakhiplayworks.com/sitemap.xml
